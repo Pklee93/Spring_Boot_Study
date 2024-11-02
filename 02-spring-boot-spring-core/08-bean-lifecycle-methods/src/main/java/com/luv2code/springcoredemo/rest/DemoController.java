@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
+
+    // define a private field for the dependency
     private Coach myCoach;
 
     @Autowired
@@ -21,4 +23,11 @@ public class DemoController {
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
     }
+
 }
+
+
+
+
+
+

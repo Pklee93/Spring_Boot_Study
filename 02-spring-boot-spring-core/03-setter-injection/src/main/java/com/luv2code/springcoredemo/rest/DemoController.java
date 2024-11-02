@@ -7,15 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
+
+    // define a private field for the dependency
     private Coach myCoach;
 
     @Autowired
     public void setCoach(Coach theCoach) {
-        myCoach = theCoach;
-    }
-
-    @Autowired
-    public DemoController(Coach theCoach) {
         myCoach = theCoach;
     }
 
@@ -24,3 +21,9 @@ public class DemoController {
         return myCoach.getDailyWorkout();
     }
 }
+
+
+
+
+
+

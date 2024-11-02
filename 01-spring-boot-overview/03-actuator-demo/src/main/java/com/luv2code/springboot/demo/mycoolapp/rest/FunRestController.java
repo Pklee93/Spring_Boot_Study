@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FunRestController {
+
     // expose "/" that return "Hello World"
+
     @GetMapping("/")
     public String sayHello() {
         return "Hello World!";
@@ -24,4 +26,11 @@ public class FunRestController {
     public String getDailyFortune() {
         return "Today is your lucky day.";
     }
+
 }
+
+
+
+
+
+
